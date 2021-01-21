@@ -1,13 +1,38 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Monterrat', sans-serif;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background: radial-gradient(circle at bottom, #FB8B24 2%, transparent 30%),
+              radial-gradient(circle at bottom right, #DC417F 10%, transparent 45%),
+              radial-gradient(circle at bottom left, #0CB6D4 10%, transparent 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+              
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  font-family: 'Monterrat', sans-serif;
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  border-radius: 15px;
+  padding: 2% 3%;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
+
+.joke{
+  width: 80%;
+  font-family: 'Yusei Magic', sans-serif;
 }

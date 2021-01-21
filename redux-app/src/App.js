@@ -8,13 +8,16 @@ function App(props) {
     props.getJoke();
   }
 
-  console.log(props)
-
   return (
     <div className="App">
       <button onClick={clickHandler}>Get Joke</button>
       <div className="joke">
-        {props.humor.type === "twopart" ? <p>{props.humor.setup}<br/>{props.humor.delivery}</p>: <p>{props.humor.joke}</p>}
+        {props.humor.type === "twopart" ? 
+          <p>
+            {props.humor.setup}<br/><br/>
+            {props.humor.delivery}
+            </p> : 
+            <p>{props.humor.joke}</p>}
       </div>
     </div>
   );
